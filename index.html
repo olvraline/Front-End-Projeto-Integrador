@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/tab-icon.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tela Inicial</title>
+</head>
+
+<body>
+  <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
+    <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
+      <a href="./index.html">
+        <span id="header-logo" class="flex cursor-pointer">
+          <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png" alt="WeBuyIt logo">
+          <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
+        </span>
+      </a>
+      <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
+        <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none" type="text"
+          placeholder="Pesquisar">
+          <a href="./tela_pesquisa.html"><i class="las la-search flex m-4"></i></a>
+      </div>
+      <div id="header-icons" class="flex items-center">
+        <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
+        <a href="./carrinho_de_compras.html"><i
+            class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i></a>
+        <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
+
+        <a href="./login.html"><i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
+    <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
+      <li>
+        <a href="#" class="text text-white hover:text-yellow-400">Categorias</a>
+        <div class="sub-menu">
+          <ul class="block">
+            <li> <a href="#"> Viagem </a> </li>
+            <li> <a href="#"> Camping </a> </li>
+            <li> <a href="#"> Praia </a> </li>
+            <li> <a href="#"> Pesca </a> </li>
+            <li> <a href="#"> Serviços </a> </li>
+          </ul>
+        </div>
+      </li>
+
+      <li> <a href="#" class="hover:text-yellow-400">Eletrônicos</a>
+        <div class="sub-menu">
+          <ul class="block">
+            <li> <a href="#"> Tv </a> </li>
+            <li> <a href="#"> Celular </a> </li>
+            <li> <a href="#"> Home-Theater </a> </li>
+            <li> <a href="#"> Monitor </a> </li>
+            <li> <a href="#"> Notebook</a> </li>
+          </ul>
+        </div>
+
+
+      </li>
+
+      <li> <a href="#" class="hover:text-yellow-400">Livros</a>
+        <div class="sub-menu">
+          <ul class="block">
+            <li> <a href="#"> Ficção </a> </li>
+            <li> <a href="#"> Drama </a> </li>
+            <li> <a href="#"> Romance </a> </li>
+            <li> <a href="#"> Policial </a> </li>
+            <li> <a href="#"> Clássicos</a> </li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li> <a href="#" class="hover:text-yellow-400">Games</a>
+        <div class="sub-menu">
+          <ul class="block   ">
+            <li> <a href="#"> Playstation 5 </a> </li>
+            <li> <a href="#"> Xbox One </a> </li>
+            <li> <a href="#"> Nintendo Switch </a> </li>
+            <li> <a href="#"> Playstation 4 </a> </li>
+            <li> <a href="#"> Periféricos</a> </li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li> <a href="#" class="hover:text-yellow-400">Casa</a>
+        <div class="sub-menu">
+          <ul class="block  ">
+            <li> <a href="#"> Mesa </a> </li>
+            <li> <a href="#"> Banho </a> </li>
+            <li> <a href="#"> Toalha </a> </li>
+            <li> <a href="#"> Tapetes </a> </li>
+            <li> <a href="#"> Cortinas</a> </li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li> <a href="./index.html" class="hover:text-yellow-400">Ofertas</a>
+      </li>
+
+      <li> <a href="./cadastro-produto.html" class="hover:text-yellow-400">Vender</a>
+
+
+      </li>
+
+    </ul>
+  </nav>
+
+  <div class="banner  mt-8 mb-4    mx-8 flex justify-center">
+    <img class="border border-violet-300 rounded-lg xl:mx-autod" src="./assets/banner-tela-inicial.png" alt="">
+  </div>
+
+  <h1 id="destaque" class="font-bold text-center text-2xl xl:mx-[420px] sm:text-4xl mb-4 xl:mt-12">DESTAQUES</h1>
+
+  <div class="container xl:mx-auto  xl:w-[1000px] ">
+
+    <div id="container" class="flex grid grid-cols-2 p-2 gap-4 lg:grid-cols-4">
+      <a href="./produto.html ">
+        <div class="card " id="modelo">
+          <img src="./assets/camiseta-dois.png " alt="camisa-preta-masc" class="rounded-lg lx:w-full">
+  
+          <h1 class="text-md mt-2 font-bold">
+            Camiseta unissex
+          </h1>
+  
+          <div class="md:flex flex-col md:justify-between">
+            <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+            </div>
+            <div class="product-price">
+              <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+              <span class="text-md mb-2 ml-1 font-bold">00</span>
+              <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+            </div>
+  
+            <div class="text-md my-1">em 5x R$ 5</div>
+          </div>
+  
+          <ul>
+            <li class="empty-icon">
+              <i class="las la-user"></i>
+            </li>
+            <li class="empty-icon">
+              <i class="las la-user"></i>
+            </li>
+            <li class="empty-icon">
+              <i class="las la-user"></i>
+            </li>
+            <li class="empty-icon">
+              <i class="las la-user"></i>
+            </li>
+            <li class="empty-icon">
+              <i class="las la-user"></i>
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+
+      <div class="card " id="modelo">
+        <img src="./assets/camiseta-um.png" alt="camisa-preta-masc" class="rounded-lg xl:w-full">
+
+        <h1 class="text-md mt-2 font-bold xl:w-full">
+          Camiseta básica
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between ">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through xl:w-full">R$ 32
+          </div>
+          <div class="product-price">
+            <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+            <span class="text-md mb-2 ml-1 font-bold">00</span>
+            <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+          </div>
+
+          <div class="text-md my-1 ">em 5x R$ 5</div>
+        </div>
+
+        <ul>
+          <li class="volunteer-icon ">
+            <i class="las la-user"></i>
+          </li>
+          <li class="volunteer-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="volunteer-icon">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card" id="modelo">
+        <img src="./assets/gabinete-gamer.png" alt="camisa-preta-masc" class="rounded-lg xl:w-full">
+
+        <h1 class="text-md mt-2 font-bold xl:w-full">
+          Pc Gamer
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between ">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through xl:w-full">R$ 92
+          </div>
+          <div class="product-price">
+            <div class="text-3xl md:text-3xl font-bold text-black">R$ 72 </div>
+            <span class="text-md mb-2 ml-1 font-bold">00</span>
+            <span class="ml-2 text-[#B35FD0] text-xl font-bold">-40%</span>
+          </div>
+
+          <div class="text-md my-1 ">em 5x R$ 5</div>
+        </div>
+
+        <ul>
+          <li class="volunteer-icon ">
+            <i class="las la-user"></i>
+          </li>
+          <li class="volunteer-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="volunteer-icon">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card " id="modelo">
+        <img src="./assets/tv-produto.png" alt="camisa-preta-masc" class="rounded-lg xl:w-full">
+
+        <h1 class="text-md mt-2 font-bold xl:w-full">
+          Smart tv
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between ">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through xl:w-full">R$ 2.000
+          </div>
+          <div class="product-price product-price">
+            <div class="product-price">
+              <div class="text-3xl md:text-3xl font-bold text-black">R$ 1.350 </div>
+              <span class="text-md mb-2 ml-1 font-bold">00</span>
+              <span class="ml-2 text-[#B35FD0] text-xl font-bold">-2  0%</span>
+            </div>
+          </div>
+
+          <div class="text-md my-1 ">em 5x R$ 5</div>
+        </div>
+
+        <ul class="flex ">
+          <li class="volunteer-icon ">
+            <i class="las la-user"></i>
+          </li>
+          <li class="volunteer-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="volunteer-icon">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container  xl:mx-auto  xl:w-[1000px]     ">
+
+    <div id="container" class="flex grid grid-cols-2 p-2 gap-4 lg:grid-cols-4">
+
+      <div class="card " id="modelo">
+        <img src="./assets/camiseta-dois.png" alt="camisa-preta-masc" class="rounded-lg lx:w-full">
+
+        <h1 class="text-md mt-2 font-bold">
+          Camiseta básica unissex
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 82
+          </div>
+          <div class="product-price">
+            <div class="text-3xl md:text-3xl font-bold text-black">R$ 62 </div>
+            <span class="text-md mb-2 ml-1 font-bold">00</span>
+            <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+          </div>
+
+          <div class="text-md my-1">em 5x R$ 5</div>
+        </div>
+
+        <ul>
+          <li class="empty-icon">
+            <i class="las la-user"></i>
+          </li>
+          <li class="empty-icon">
+            <i class="las la-user"></i>
+          </li>
+          <li class="empty-icon">
+            <i class="las la-user"></i>
+          </li>
+          <li class="empty-icon">
+            <i class="las la-user"></i>
+          </li>
+          <li class="empty-icon">
+            <i class="las la-user"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card " id="modelo">
+        <img src="./assets/camiseta-dois.png " alt="camisa-preta-masc" class="rounded-lg xl:w-full">
+
+        <h1 class="text-md mt-2 font-bold xl:w-full">
+          Camiseta básica azul-marinho
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between ">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through xl:w-full">R$ 32
+          </div>
+          <div class="product-price product-price">
+            <div class="text-3xl md:text-3xl font-bold text-black xl:w-full">R$ 22 </div>
+            <span class="text-md mb-2 ml-1 font-bold xl:w-full">00</span>
+            <span class="ml-2 text-[#B35FD0] text-xl font-bold xl:w-full">-33%</span>
+          </div>
+
+          <div class="text-md my-1 ">em 5x R$ 5</div>
+        </div>
+
+        <ul>
+          <li class="volunteer-icon ">
+            <i class="las la-user"></i>
+          </li>
+          <li class="volunteer-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="volunteer-icon">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card " id="modelo">
+        <img src="./assets/gabinete-gamer.png" alt="camisa-preta-masc" class="rounded-lg xl:w-full">
+
+        <h1 class="text-md mt-2 font-bold xl:w-full">
+          PC Gamer
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between ">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through xl:w-full">R$ 80
+          </div>
+          <div class="product-price product-price">
+            <div class="text-3xl md:text-3xl font-bold text-black xl:w-full">R$ 40 </div>
+            <span class="text-md mb-2 ml-1 font-bold xl:w-full">00</span>
+            <span class="ml-2 text-[#B35FD0] text-xl font-bold xl:w-full">-50%</span>
+          </div>
+
+          <div class="text-md my-1 ">em 5x R$ 5</div>
+        </div>
+
+        <ul>
+          <li class="volunteer-icon ">
+            <i class="las la-user"></i>
+          </li>
+          <li class="volunteer-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="volunteer-icon">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card " id="modelo">
+        <img src="./assets/camiseta-um.png " alt="camisa-preta-masc" class="rounded-lg xl:w-full">
+
+        <h1 class="text-md mt-2 font-bold xl:w-full">
+          Camiseta
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between ">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through xl:w-full">R$ 32
+          </div>
+          <div class="product-price product-price">
+            <div class="text-3xl md:text-3xl font-bold text-black xl:w-full">R$ 22 </div>
+            <span class="text-md mb-2 ml-1 font-bold xl:w-full">00</span>
+            <span class="ml-2 text-[#B35FD0] text-xl font-bold xl:w-full">-33%</span>
+          </div>
+
+          <div class="text-md my-1 ">em 5x R$ 5</div>
+        </div>
+
+        <ul class="flex ">
+          <li class="volunteer-icon ">
+            <i class="las la-user"></i>
+          </li>
+          <li class="volunteer-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="volunteer-icon">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+          <li class="empty-icon ">
+            <i class="las la-user "></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tab-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inserir-cartao.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Inserir Cartão</title>
+</head>
+
+<body>
+    <header id="header" class="w-screen xs:p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center relative flex">
+        <img class="border-collapse items-center justify-center h-16"
+            src="./assets/images/MicrosoftTeams-image.png"
+            alt="Logo">
+    </header>
+
+    <div class="flex flex-col items-center justify-self-center w-full mr-8">
+        <div class="login-container text-left mt-12 p-8 justify-center w-screen lg:w-[400px]">
+            <div class="login-title items-center flex">
+                <i class="las la-credit-card la-3x mr-4"></i>
+                <h2 class="login-text text-3xl text-[#B35FD0]">Inserir cartão</h2>
+            </div>
+
+            <form class="login-form flex flex-col">
+                <label class="user-cpf-name" for="user-cpf">CPF:</label>
+                <input type="text" id="user-cpf" name="user-cpf">
+
+                <label class="card-name-write" for="card-name">Nome presente no cartão:</label>
+                <input type="text" id="card-name" name="card-name">
+    
+                <label class="card-number-write" for="card-number">Número do cartão:</label>
+                <input type="text" id="card-number" name="card-number">
+    
+                <label class="card-cvv-write" for="card-cvv">CVV:</label>
+                <input type="text" id="card-cvv" name="card-cvv">
+
+                <label class="card-cvv-write" for="card-cvv">Data de vencimento:</label>
+                <div class="flex flex-row justify-between items-center">
+                    <span class="flex flex-col">
+                        <label for="expiring-date-month">Mês:</label>
+                        <select id="expiring-date-month" class="text-xl font-bold justify-text-center bg-[#cccccc67] px-[16px] py-[19px] my-2 rounded-lg appearance-none" name="expiring-date-month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </span>
+                    <span class="flex flex-col">
+                        <label for="expiring-date-year">Ano (4 dígitos):</label>
+                        <input class="" type="text" id="expiring-date-year" name="expiring-date-year">
+                    </span>
+                </div>
+                
+                <button id="register-button" type="button">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="inserir-cartao.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tab-icon.png" type="image/x-icon">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="editar_perfil.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+
+<body>
+    <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
+        <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
+            <a href="./index.html">
+                <span id="header-logo" class="flex cursor-pointer">
+                    <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png"
+                        alt="WeBuyIt logo">
+                    <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
+                </span>
+            </a>
+            <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
+                <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
+                    type="text" placeholder="Pesquisar">
+                    <a href="./tela_pesquisa.html"><i class="las la-search flex m-4"></i></a>
+            </div>
+            <div id="header-icons" class="flex items-center">
+                <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
+                <a href="./carrinho_de_compras.html"><i
+                        class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i></a>
+                <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
+
+                <a href="./editar_perfil.html"><i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
+        <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
+            <li>
+                <a href="#" class="text text-white hover:text-yellow-400">Categorias</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Viagem </a> </li>
+                        <li> <a href="#"> Camping </a> </li>
+                        <li> <a href="#"> Praia </a> </li>
+                        <li> <a href="#"> Pesca </a> </li>
+                        <li> <a href="#"> Serviços </a> </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Eletrônicos</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Tv </a> </li>
+                        <li> <a href="#"> Celular </a> </li>
+                        <li> <a href="#"> Home-Theater </a> </li>
+                        <li> <a href="#"> Monitor </a> </li>
+                        <li> <a href="#"> Notebook</a> </li>
+                    </ul>
+                </div>
+
+
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Livros</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Ficção </a> </li>
+                        <li> <a href="#"> Drama </a> </li>
+                        <li> <a href="#"> Romance </a> </li>
+                        <li> <a href="#"> Policial </a> </li>
+                        <li> <a href="#"> Clássicos</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Games</a>
+                <div class="sub-menu">
+                    <ul class="block   ">
+                        <li> <a href="#"> Playstation 5 </a> </li>
+                        <li> <a href="#"> Xbox One </a> </li>
+                        <li> <a href="#"> Nintendo Switch </a> </li>
+                        <li> <a href="#"> Playstation 4 </a> </li>
+                        <li> <a href="#"> Periféricos</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Casa</a>
+                <div class="sub-menu">
+                    <ul class="block  ">
+                        <li> <a href="#"> Mesa </a> </li>
+                        <li> <a href="#"> Banho </a> </li>
+                        <li> <a href="#"> Toalha </a> </li>
+                        <li> <a href="#"> Tapetes </a> </li>
+                        <li> <a href="#"> Cortinas</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li> <a href="./index.html" class="hover:text-yellow-400">Ofertas</a>
+
+
+            </li>
+
+            <li> <a href="./cadastro-produto.html" class="hover:text-yellow-400">Vender</a>
+
+
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="profile-container p-5 text-center">
+        <div class="flex-col my-8 text-purple-900">
+            <p class="text-3xl">Editar Perfil:</p>
+        </div>
+        <div class="cellphone lg:hidden">
+            <div class="profile-header flex flex-col items-center">
+                <div class="profile-image-container">
+                    <div
+                        class="profile-image rounded-full w-[150px] h-[150px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                    </div>
+                    <i id="edit" class="las la-pen text-4xl"></i>
+                </div>
+            </div>
+            <div class="profile-details">
+                <form class="profile-form mt-5 flex flex-col">
+                    <label for="name">Nome</label>
+                    <input type="text" id="mobile-name" name="name">
+
+                    <label for="cep">CEP</label>
+                    <input id="mobile-cep" name="cep">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="mobile-email" name="email">
+
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="mobile-phone" name="phone">
+
+                </form>
+            </div>
+            <div class="items-center flex flex-col">
+                <div class="border-b-4 p-2 ">
+                    <p class="mt-9 text-xl">Formas de pagamento:</p>
+                </div>
+                <a href="./inserir-cartao.html"><p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900"> Adicionar cartão
+                    +</p></a>
+                <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
+                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <div class="text-left ml-5">
+                        <p>Mastercard</p>
+                        <p>********6045</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                </div>
+
+                <div class="add-store">
+                    <div class="border-b-4 p-2">
+                        <p class="mt-9 text-xl">Suas Lojas:</p>
+                    </div>
+
+                    <a href="./visualizacao_loja.html"><p class="my-4 underline underline-offset-2 cursor-pointer text-purple-900">Adicionar Loja +</p></a>
+                    <div
+                        class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                    </div>
+                    <button class="purple-button my-8">Salvar</button>
+                </div>
+            </div>
+        </div>
+        <div class="pc hidden lg:flex justify-center flex-col">
+            <div class="profile-container p-5 text-center flex flex-row justify-center">
+                <div class="profile-details flex">
+                    <form class="profile-form mt-5 flex flex-col w-[452px]">
+
+                        <label class="text-left" for="name">Nome</label>
+                        <input type="text" id="pc-name" name="name">
+
+                        <label class="text-left" for="cep">CEP</label>
+                        <input id="pc-cep" name="cep">
+
+                        <label class="text-left" for="email">Email</label>
+                        <input type="email" id="pc-email" name="email">
+
+                        <label class="text-left" for="phone">Telefone</label>
+                        <input type="tel" id="pc-phone" name="phone">
+
+                    </form>
+
+                    <div class="profile-header flex items-center ml-32 mb-32">
+                        <div class="profile-image-container">
+                            <div
+                                class="profile-image rounded-full w-[220px] h-[220px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            </div>
+                            <i id="edit" class="las la-pen text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-center mx-[240px]">
+                <p class="text-xl">Formas de pagamento:</p>
+              <a href="./inserir-cartao.html"><p class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center"> Adicionar
+                cartão +</p></a>
+                <div class="flex border-y-4 py-8">
+                  <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center">
+                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <div class="text-left ml-5">
+                      <p>Mastercard</p>
+                      <p>********6045</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                  </div>
+      
+                  <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center ml-12">
+                    <i class="las la-credit-card text-4xl mt-5"></i>
+                    <div class="text-left ml-5">
+                      <p>Visa</p>
+                      <p>********0504</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                  </div>
+                </div>
+            </div>
+            <div class="add-store flex flex-col mx-[240px]">
+                <p class="mt-9 text-xl">Suas Lojas:</p>
+              <a href="./Tela-Cadastro-Loja.html"><label class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4" for="add-store-plus">Adicionar Loja +</label></a>
+              <div class="flex border-y-4 py-8">
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+                <div class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500 mr-12"></div>
+              </div>
+      
+            </div>
+            <div class="save-button">
+                <button id="save-button-desktop" class="purple-button my-8 w-[300px]" type="button">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="editar_perfil.js"></script>
+</body>
+
+</html>

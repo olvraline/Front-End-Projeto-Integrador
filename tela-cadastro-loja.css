@@ -1,0 +1,137 @@
+#titulo-cadastro-loja {
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+
+#form-cadastro-loja {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-color: #581c87;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+    margin-top: 19px !important;
+}
+
+#button-continuar-loja {
+    background: linear-gradient(92deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%) !important;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4%;
+    margin-top: 20px;
+    height: 46px;
+    width: 100%;
+}
+
+#nome-loja,
+#descricao-loja,
+#cep-loja,
+#estado,
+#cidade,
+#bairro,
+#rua,
+#numero,
+#complemento,
+#contato-loja,
+#cpf-loja,
+#cnpj-loja,
+#senha-confirmar-loja {
+    background-color: #cccccc67;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+#buscar-cep {
+    color: #581c87;
+    text-decoration: underline;
+    margin-left: 33%;
+    font-size: 9px;
+}
+
+input {
+    border: none;
+}
+
+#descricao-loja {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+#banner {
+    background-color: #cccccc67;
+    height: 200px;
+    position: relative;
+    width: 650px;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+#img-perfil {
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    border: 20px solid white;
+    position: absolute;
+    bottom: -90px;
+    margin-left: 26px;
+    background-color: #cccccc67;
+}
+
+@media only screen and (max-width: 680px) {
+    * {
+        font-family: Hammersmith one;
+        font-size: 13px !important;
+    }
+
+    label {
+        font-size: 13px !important;
+    }
+
+    #banner {
+        background-color: #cccccc67;
+        height: 187px;
+        width: 358px;
+        position: relative;
+        display: flex;
+        border-radius: 4%;
+        margin-bottom: 50px;
+    }
+
+    #img-perfil {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        border: 13px solid white;
+        position: absolute;
+        bottom: -65px;
+        margin-left: 26px;
+        background-color: #cccccc67;
+    }
+
+    #buscar-cep{
+        margin-left: 35%;
+    }
+}
+#header {
+    height: 92px;
+    background: linear-gradient(90deg, rgba(58, 49, 160, 0.64) 0.02%, rgba(179, 95, 208, 0.70) 43.93%, rgba(238, 98, 224, 0.67) 87.48%);
+    align-content: center;
+}

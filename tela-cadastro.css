@@ -1,0 +1,49 @@
+#nome,
+#cep,
+#data,
+#email,
+#telefone,
+#password {
+    background-color: #cccccc67;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+#button-continuar {
+    background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#form1 {
+    border-color: #581c87;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+}
+
+#title-cadastro {
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+
+#buscar-cep {
+    color: #B35FD0;
+    text-decoration: underline;
+    font-size: 12px;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tab-icon.png" type="image/x-icon">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header id="header" class="w-screen xs:p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center relative flex">
+        <img class="border-collapse items-center justify-center h-16"
+            src="./assets/images/Sem Título-4.png   "
+            alt="Logo">
+    </header>
+
+    <div class="flex flex-col items-center justify-self-center w-full mr-8">
+        <div class="login-container text-left mt-12 p-8">
+            <div class="login-title items-center flex justify-center mr-8 mb-10">
+                <i class="lar la-user-circle la-3x"></i>
+                <h2 class="login-text text-5xl text-[#B35FD0]">Login</h2>
+            </div>
+
+            <form class="login-form flex flex-col">
+                <label class="email-write" for="username">E-mail</label>
+                <input class="email-box box-border text-black" type="text" id="user-email" name="username">
+    
+                <label class="password-write" for="password">Senha</label>
+                <input class="password-box text-black" type="password" id="user-password" name="password">
+    
+                <!-- <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
+                        href="#">Esqueci
+                        minha senha</a></div> -->
+                <a id="login-button-link" href="#"><button id="login-button" type="button">Login</button></a>
+                <p class="signup-link text-center text-black">Não tem cadastro? <a
+                        class="underline underline-offset-2 text-purple-900" href="./Tela-Cadastro.html">Cadastre-se!</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tab-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tela_pesquisa.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Tela de Pesquisa</title>
+</head>
+
+<body>
+    <header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
+        <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
+            <a href="./index.html">
+                <span id="header-logo" class="flex cursor-pointer">
+                    <img class="hidden lg:flex mr-2 pb-2 lg:h-16" src="./assets/images/we_buy_it_bag.png"
+                        alt="WeBuyIt logo">
+                    <img class="flex lg:mr-8 h-10 lg:h-14" src="./assets/images/we_buy_it_logo.png" alt="WeBuyIt title">
+                </span>
+            </a>
+            <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
+                <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none"
+                    type="text" placeholder="Pesquisar" value="camiseta basica">
+                    <a href="./tela_pesquisa.html"><i class="las la-search flex m-4"></i></a>
+            </div>
+            <div id="header-icons" class="flex items-center">
+                <i class="las la-search flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden"></i>
+                <a href="./carrinho_de_compras.html"><i
+                        class="las la-shopping-cart la-3x mx-4 hidden sm:flex lg:flex cursor-pointer"></i></a>
+                <i class="lar la-bell la-3x hidden mx-4 sm:flex lg:flex cursor-pointer"></i>
+                <a href="./editar_perfil.html"><i class="las la-user-circle la-3x lg:mx-4 cursor-pointer"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
+        <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
+            <li>
+                <a href="#" class="text text-white hover:text-yellow-400">Categorias</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Viagem </a> </li>
+                        <li> <a href="#"> Camping </a> </li>
+                        <li> <a href="#"> Praia </a> </li>
+                        <li> <a href="#"> Pesca </a> </li>
+                        <li> <a href="#"> Serviços </a> </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Eletrônicos</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Tv </a> </li>
+                        <li> <a href="#"> Celular </a> </li>
+                        <li> <a href="#"> Home-Theater </a> </li>
+                        <li> <a href="#"> Monitor </a> </li>
+                        <li> <a href="#"> Notebook</a> </li>
+                    </ul>
+                </div>
+
+
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Livros</a>
+                <div class="sub-menu">
+                    <ul class="block">
+                        <li> <a href="#"> Ficção </a> </li>
+                        <li> <a href="#"> Drama </a> </li>
+                        <li> <a href="#"> Romance </a> </li>
+                        <li> <a href="#"> Policial </a> </li>
+                        <li> <a href="#"> Clássicos</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Games</a>
+                <div class="sub-menu">
+                    <ul class="block   ">
+                        <li> <a href="#"> Playstation 5 </a> </li>
+                        <li> <a href="#"> Xbox One </a> </li>
+                        <li> <a href="#"> Nintendo Switch </a> </li>
+                        <li> <a href="#"> Playstation 4 </a> </li>
+                        <li> <a href="#"> Periféricos</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li> <a href="#" class="hover:text-yellow-400">Casa</a>
+                <div class="sub-menu">
+                    <ul class="block  ">
+                        <li> <a href="#"> Mesa </a> </li>
+                        <li> <a href="#"> Banho </a> </li>
+                        <li> <a href="#"> Toalha </a> </li>
+                        <li> <a href="#"> Tapetes </a> </li>
+                        <li> <a href="#"> Cortinas</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li> <a href="./index.html" class="hover:text-yellow-400">Ofertas</a>
+
+
+            </li>
+
+            <li> <a href="./cadastro-produto.html" class="hover:text-yellow-400">Vender</a>
+
+
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="main-div h-[100vh] xl:mx-auto xl:max-w-[1424px] mt-8">
+
+        <div class="flex items-center p-1 lg:hidden">
+            <button id="filter-icon" type="button">
+                <i class="las la-filter la-2x p-1"></i>
+            </button>
+            <h1 class="px-2 my-4 text-2xl float-right">Resultados para "camiseta basica":</h1>
+        </div>
+
+        <aside id="filters-div" class="hidden lg:block float-left mr-6 max-w-[296px]">
+            <div>
+                <h1 class="text-3xl">Resultados para "camiseta basica:"</h1>
+                <h2 class="mt-2">12 produtos</h2>
+            </div>
+
+            <div class="flex items-center mt-6">
+                <i class="las la-filter la-2x "></i>
+                <h1 class="text-xl ml-2">Filtros:</h1>
+            </div>
+
+            <div class="filter">
+                <h1>Gênero</h1>
+                <ul>
+                    <li class="text-color-[#B35FD0]">Masculino</li>
+                    <li>Feminino</li>
+                    <li>Unissex</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Tamanho</h1>
+                <ul>
+                    <li>Infantil</li>
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                    <li>XGG</li>
+                    <li>G1</li>
+                    <li>G2</li>
+                    <li>G3</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Condição</h1>
+                <ul>
+                    <li>Novo</li>
+                    <li>Usado</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Preço</h1>
+                <form id="price-filter" class="flex items-center mt-4" action="">
+                    <input type="number" class="w-[80px] bg-[#ededed] rounded-lg p-4 focus:outline-[#B35FD0]"
+                        placeholder="Min.">
+                    <div class="mx-2">-</div>
+                    <input type="number" class="w-[80px] bg-[#ededed] rounded-lg p-4 focus:outline-[#B35FD0]"
+                        placeholder="Max.">
+                </form>
+            </div>
+
+            <div class="filter">
+                <h1>Desconto</h1>
+                <ul>
+                    <li>Mais de 5%</li>
+                    <li>Mais de 10%</li>
+                    <li>Mais de 20%</li>
+                    <li>Mais de 30%</li>
+                    <li>Mais de 40%</li>
+                    <li>Mais de 50%</li>
+                    <li>Mais de 60%</li>
+                    <li>Mais de 70%</li>
+                    <li>Mais de 80%</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Voluntários</h1>
+                <ul>
+                    <li class="flex">
+                        1.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li class="flex">
+                        2.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li class="flex">
+                        3.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+                    </li>
+
+                    <li class="flex">
+                        4.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li class="flex">
+                        5.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div id="mobile-filters-div" class="hidden border-t-2 border-color-black text-center items-center flex-col p-1">
+
+            <div class="mt-6 flex justify-between items-center">
+                <i class="las la-times la-2x p-1" onclick="CloseMobileFilters()"></i>
+                <h1 class="text-2xl font-bold">Filtros:</h1>
+                <i class="las la-check la-2x p-1" onclick="ApproveMobileFilters()"></i>
+            </div>
+
+
+            <div class="filter">
+                <h1>Gênero</h1>
+                <ul>
+                    <li>Masculino</li>
+                    <li>Feminino</li>
+                    <li>Unissex</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Tamanho</h1>
+                <ul>
+                    <li>Infantil</li>
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                    <li>XGG</li>
+                    <li>G1</li>
+                    <li>G2</li>
+                    <li>G3</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Condição</h1>
+                <ul>
+                    <li>Novo</li>
+                    <li>Usado</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Preço</h1>
+                <form id="price-filter" class="flex items-center mt-4 justify-center" action="">
+                    <input type="number" class="w-[80px] bg-[#ededed] rounded-lg p-4 focus:outline-[#B35FD0]"
+                        placeholder="Min.">
+                    <div class="mx-2">-</div>
+                    <input type="number" class="w-[80px] bg-[#ededed] rounded-lg p-4 focus:outline-[#B35FD0]"
+                        placeholder="Max.">
+                </form>
+            </div>
+
+            <div class="filter">
+                <h1>Desconto</h1>
+                <ul>
+                    <li>Mais de 5%</li>
+                    <li>Mais de 10%</li>
+                    <li>Mais de 20%</li>
+                    <li>Mais de 30%</li>
+                    <li>Mais de 40%</li>
+                    <li>Mais de 50%</li>
+                    <li>Mais de 60%</li>
+                    <li>Mais de 70%</li>
+                    <li>Mais de 80%</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h1>Voluntários</h1>
+                <ul>
+                    <li>
+                        1.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        2.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        3.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+                    </li>
+
+                    <li>
+                        4.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        5.
+                        <div class="ml-2">
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                            <i class="las la-user la-2x"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="cards-div" class="flex grid grid-cols-2 p-2 gap-2 lg:grid-cols-4">
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-preta-masc.webp" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta básica masculina
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 30
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 25 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-16%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-branca-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta branca masculina 100% algodão
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 45
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 30 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 6</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-preta-unissex.png  " alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta unissex
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-azul-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta básica azul-marinho
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-preta-masc.webp" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta básica masculina
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 30
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 25 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-16%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-branca-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta branca masculina 100% algodão
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 45
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 30 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 6</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-preta-unissex.png  " alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta unissex
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-azul-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta básica azul-marinho
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-preta-masc.webp" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta básica masculina
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 30
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 25 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-16%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-branca-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta branca masculina 100% algodão
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 45
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 30 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 6</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-preta-unissex.png  " alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta preta unissex
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="modelo">
+                <img src="./assets/images/camisa-azul-masc.png" alt="camisa-preta-masc" class="imagem-produto">
+
+                <h1 class="text-md mt-2 font-bold">
+                    Camiseta básica azul-marinho
+                </h1>
+
+                <div class="md:flex flex-col md:justify-between">
+                    <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 32
+                    </div>
+                    <div class="product-price product-price">
+                        <div class="text-3xl md:text-3xl font-bold text-black">R$ 22 </div>
+                        <span class="text-md mb-2 ml-1 font-bold">00</span>
+                        <span class="ml-2 text-[#B35FD0] text-xl font-bold">-33%</span>
+                    </div>
+
+                    <div class="text-md my-1">em 5x R$ 5</div>
+                </div>
+
+                <ul>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="volunteer-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                    <li class="empty-icon">
+                        <i class="las la-user"></i>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="tela_pesquisa.js"></script>
+</body>
+
+</html>
